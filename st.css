@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #bf91f3, #e0e0e0);
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Search Bar */
+.search-container {
+    width: 50%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 12px 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.search-container:hover {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.search-container input {
+    flex: 1;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    background: none;
+    color: #333;
+}
+
+.search-icon {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Modules Grid */
+.modules-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Module Cards */
+.module {
+    background: rgb(159, 96, 243);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 1px solid #ddd;
+}
+
+.module:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+.icon {
+    background: #f7f7f7;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon img {
+    width: 45px;
+    height: 45px;
+}
+
+/* Text */
+.module p {
+    margin-top: 16px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #444;
+}

@@ -1,0 +1,176 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #bf91f3, #e0e0e0);
+}
+
+header {
+    background-color: #905f5f;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: rgb(253, 249, 249);
+    text-decoration: none;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.search-container input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #f8f4f4;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #b07f7f;
+    outline: none;
+}
+
+.search-container button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #874949;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.search-container button:hover {
+    background-color: #ebd5d5;
+}
+
+.background-image {
+    background-image: url('pcuimage.jpg'); /* Correct path to your image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Full height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional text shadow */
+}
+
+#hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.cta-button {
+    background-color: #522828;
+    color: rgb(252, 247, 247);
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+#video-section {
+    position: relative;
+    overflow: hidden;
+    height: 90vh; /* Adjust height as needed */
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 0; /* Behind the overlay content */
+}
+
+.video-overlay {
+    position: relative; /* Changed to absolute for proper centering */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center text */
+    z-index: 1; /* On top of the video */
+    color: rgb(255, 250, 250);
+    text-align: center; /* Corrected to center */
+    padding: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Optional text shadow */
+}
+
+.course-grid, .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.course-card {
+    background-color: #f2e9e9; /* Light background for cards */
+    border: 2px solid #641010; /* Border color */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px; /* Increased width for better display */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.course-card:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.category-card {
+    background-color: #f2e9e9; /* Light background for cards */
+    border: 2px solid #641010; /* Border color */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    width: 250px; /* Increased width for better display */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s; }
+
+    .category-card:hover {
+        transform: scale(1.05); /* Slightly enlarge on hover */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    } 
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #5f0f8e;
+        color: white;
+    }
+    .background-image {
+        background-image: url('your-image.jpg'); /* Replace with your image path */
+        background-size: cover; /* Ensures the image covers the entire div */
+        background-position: center; /* Centers the image */
+        background-repeat: no-repeat; /* Prevents tiling */
+        height: 100vh; /* Full height of the viewport */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; /* Text color for contrast */
+        text-align: center;
+        padding: 20px;
+    }
+    
